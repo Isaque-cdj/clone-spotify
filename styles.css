@@ -45,32 +45,31 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+.sidebar nav ul li .fa {
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
+    font-weight: 300;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ffffff;
+}
+
 .library {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
     background-color: #121212;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     min-block-size: 40px;
-    padding: 12px;
+    padding: 4px 8px;
     color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
-    margin-top: 200px;
-    width: 300px;
+    margin-top: 10px;
     flex-direction: column;
 }
 
-.library .library_content {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 8px;
-   }
-
-.library .library_content .library_button {
+.library .library_button {
     margin-right: 10px;
     color: #b3b3b3;
     background-color: transparent;
@@ -85,7 +84,22 @@ body {
     display: flex;
 }
 
-.library .section-playlist {
+.library .library_button .fa {
+    margin-right: 10px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.library_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library_button .fa-plus {
+    margin: 24px 10px;
+}
+
+.section-playlist {
     background-color: #242424;
     align-items: flex-start;
     border-radius: 8px;
@@ -100,23 +114,24 @@ body {
     padding: 16px 20px;
 }
 
-.library .section-playlist .section-playlist_content {
+.section-playlist .section-playlist_content {
     display: flex;
     flex-direction: column;
 }
 
-.library .section-playlist .section-playlist_content .text-title {
+.section-playlist_content .text-title {
     font-weight: 700;
     font-family: "DM Sans", sans-serif;
 }
-.library .section-playlist .section-playlist_content .subtext-title {
+
+.section-playlist_content .sub-title {
     font-weight: 500;
-    font-family: "DM Sans", sans-serif;
     font-size: 0.8rem;
 }
-.library .section-playlist .section-playlist_content .section-playlist_button{
+
+.section-playlist_content .section-playlist_button {
     background-color: #fff;
-    color:000;
+    color: #000;
     border-radius: 625rem;
     display: flex;
     font-size: 0.8rem;
@@ -130,17 +145,23 @@ body {
     justify-content: center;
     margin-top: 12px;
 }
-.library .cookies{
+
+.library .cookies {
     margin: 25px 20px;
 }
+
 .library .cookies a {
     color: #b3b3b3;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 10px;
 }
-.library .languagens .languagens_button{
+.library .cookies a:hover {
+    text-decoration: underline;
+}
+
+.languagens .languagens_button {
     background-color: transparent;
     border-radius: 9999px;
     border: 1px solid #878787;
