@@ -10,7 +10,7 @@ Este é o repositório do projeto Spotify Clone desenvolvido durante a Imersão 
 
 ## Sobre o Projeto
 
-O projeto Spotify Clone é uma reprodução do visual do Spotify, com o objetivo de ensinar e aprimorar os conhecimentos em HTML, CSS e JS. Durante a imersão, os participantes irão construir o site passo a passo, aprendendo conceitos de layout flexbox, pseudo-classes, responsividade e variáveis no CSS.
+O projeto Spotify Clone é uma reprodução do visual do Spotify, com o objetivo de ensinar e aprimorar os conhecimentos em HTML, CSS e JS. Aprendendo conceitos de layout flexbox, pseudo-classes, responsividade e variáveis no CSS.
 
 ## Como Contribuir
 
