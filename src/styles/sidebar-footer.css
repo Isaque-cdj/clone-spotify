@@ -1,5 +1,6 @@
 body {
     background-color: #030403;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -42,7 +43,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.875rem;
-    font-family: "DM Sans", sans-serif;
+
 }
 
 .sidebar nav ul li .fa {
@@ -82,7 +83,7 @@ body {
     border: 0;
     font-size: 1rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
+
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -123,7 +124,7 @@ body {
 .section__playlist__content .text {
     padding-bottom: 0.875rem;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
+
 }
 
 .section__playlist__content .title {
@@ -142,7 +143,6 @@ body {
     display: flex;
     font-size: 0.8rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 0.625rem;
