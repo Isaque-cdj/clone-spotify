@@ -47,7 +47,7 @@
     align-items: center;
 }
 
-.header__serch {
+.header__search {
     display: flex;
     align-items: center;
     width: 364px;
@@ -70,9 +70,9 @@
     padding: 0px 100px 0 12px;
     color: #fff;
     text-overflow: ellipsis;
-    outline: none;
     overflow: hidden;
     white-space: nowrap;
+    outline: none;
 }
 
 .header__login .subscribe {
@@ -81,6 +81,7 @@
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
+    border: none;
 }
 
 .header__login .login {

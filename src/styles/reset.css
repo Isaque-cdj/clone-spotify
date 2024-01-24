@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* Reset básico para elementos de layout e tipografia */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,9 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -23,26 +18,81 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+
+/* Adicionando reset para elementos de formulário e botões */
+button, input, select, textarea {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Adicionando estilos básicos para elementos de formulário */
+button, input {
+	overflow: visible;
+}
+
+/* Adicionando reset para elementos semânticos HTML5 */
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/* Reset para o elemento body */
 body {
 	line-height: 1;
 }
+
+/* Reset para listas */
 ol, ul {
 	list-style: none;
 }
+
+/* Reset para aspas e citações */
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
+/* Reset para tabelas */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Reset para imagens responsivas */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Reset para elementos específicos de mídia */
+canvas, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	display: block;
+}
+
+/* Adicionando reset para elementos incorporados */
+iframe, object, embed {
+	max-width: 100%;
+}
+
+/* Adicionando reset para elementos de formulário HTML5 */
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+/* Adicionando reset para elementos de formulário HTML5 */
+[hidden] {
+	display: none;
 }
