@@ -42,11 +42,6 @@
     cursor: pointer;
 }
 
-.header__login {
-    display: flex;
-    align-items: center;
-}
-
 .header__search {
     display: flex;
     align-items: center;
@@ -68,11 +63,16 @@
     background: transparent;
     border: none;
     padding: 0px 100px 0 12px;
-    color: #fff;
+    color: var(--text-base-light);
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     outline: none;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
 }
 
 .header__login .subscribe {
@@ -91,4 +91,30 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+}
+
+.playlist-container {
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+
+.playlist-container .playlist {
+    margin: 24px;
+}
+
+.playlist #greeting {
+    color: var(--text-base-light);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.playlist .session {
+    color: var(--text-base-light);
+    font-size: 24px;
+    font-weight: 700;
 }
