@@ -18,7 +18,7 @@ body {
     padding: 1rem 0 0 1rem;
 }
 
-.sidebar__navigation .logo {
+.logo {
     background: #121212;
     display: flex;
     border-radius: 0.5rem;
@@ -34,7 +34,7 @@ body {
     padding: 0 1.25rem 0.625rem 1.25rem;
 }
 
-.sidebar nav ul li {
+.sidebar ul li {
     padding: 0.625rem 0;
 }
 
@@ -43,17 +43,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.875rem;
-
-}
-
-.sidebar nav ul li .fa {
-    font-size: 1.25rem;
-    margin-right: 0.625rem;
-    font-weight: 300;
-}
-
-.sidebar nav ul li a:hover {
-    color: #ffffff;
 }
 
 .library {
@@ -70,6 +59,16 @@ body {
     margin-top: 0.625rem;
 }
 
+.sidebar nav ul li .fa {
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
+    font-weight: 300;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ffffff;
+}
+
 .library__content {
     display: flex;
     justify-content: space-between;
@@ -83,7 +82,6 @@ body {
     border: 0;
     font-size: 1rem;
     font-weight: 700;
-
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -101,7 +99,7 @@ body {
     margin: 1.5rem 0.625rem;
 }
 
-.section__playlist {
+.section-playlist {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -116,27 +114,26 @@ body {
     padding: 1rem 1.25rem;
 }
 
-.section__playlist .section__playlist__content {
+.section-playlist .section-playlist__content {
     display: flex;
     flex-direction: column;
 }
 
-.section__playlist__content .text {
+.section-playlist__content .text {
     padding-bottom: 0.875rem;
     color: #fff;
-
 }
 
-.section__playlist__content .title {
+.section-playlist__content .title {
     font-weight: 700;
 }
 
-.section__playlist__content .subtitle {
+.section-playlist__content .subtitle {
     font-weight: 500;
     font-size: 0.8rem;
 }
 
-.section__playlist__content .section__playlist__button {
+.section-playlist__content .section-playlist__button {
     background-color: #fff;
     color: #000;
     border-radius: 2rem;
@@ -164,11 +161,11 @@ body {
     font-size: 0.625rem;
 }
 
-.library .cookies a:hover {
+.sidebar .cookies a:hover {
     text-decoration: underline;
 }
 
-.languagens .languagens__button {
+.languages .languages__button {
     background-color: transparent;
     border-radius: 2rem;
     border: 0.0625rem solid #878787;
@@ -194,17 +191,17 @@ body {
 
 .disclaimer-premium .text {
     flex-shrink: 0;
-    color: #ffffff;
+    color: var(--text);
 }
 
-.text .disclaimer-premium__title {
+.disclaimer-premium .disclaimer-premium__title {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 0.75rem;
     margin-bottom: 0.625rem;
 }
 
-.text .disclaimer-premium__subtitle {
+.disclaimer-premium .disclaimer-premium__subtitle {
     font-size: 0.875rem;
     font-weight: 500;
 }

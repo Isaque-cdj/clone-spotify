@@ -1,3 +1,5 @@
+/* HEADER */
+
 .main-container {
     max-width: 80vw;
     height: 100vh;
@@ -13,6 +15,7 @@
     margin: 10px;
     border-radius: 8px;
     background-color: #121212;
+    padding: 12px;
 }
 
 .header__navigation .navigation {
@@ -25,7 +28,6 @@
     margin-right: 1.25rem;
 }
 
-/* A vírgula indica que o estilo é para os dois itens */
 .arrow-left,
 .arrow-right {
     display: flex;
@@ -66,12 +68,11 @@
     background: transparent;
     border: none;
     padding: 0px 100px 0 12px;
-    color: var(--text-base-light);
-    text-overflow: ellipsis;
-    outline: none;
+    color: #fff;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    outline: none;
 }
 
 .header__login .subscribe {
@@ -80,7 +81,6 @@
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
-    border: none;
 }
 
 .header__login .login {
@@ -90,19 +90,6 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
-}
-
-.header__search:hover {
-    border: 1px solid #fff;
-}
-
-.header__login .subscribe:hover {
-    transform: scale(1.04);
-    color: var(--text-base-light);
-}
-
-.header__login .login:hover {
-    transform: scale(1.04);
 }
 
 /* PLAYLIST */
@@ -119,17 +106,18 @@
 }
 
 .playlist #greeting {
-    color: var(--text-base-light);
+    color: #fff;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 48px;
 }
 
 .playlist .session {
-    color: var(--text-base-light);
+    color: #fff;
     font-size: 24px;
     font-weight: 700;
 }
+
 /* SCROLL */
 .offer__scroll-container {
     max-height: 43vh;
@@ -154,6 +142,8 @@
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px;
+
+    /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
     display: grid;
     gap: 16px;
     grid-gap: 32px;
@@ -171,10 +161,7 @@
 .cards span {
     padding: 16px;
     position: absolute;
-    /* absolute:
-                            Comportamento em relação ao ancestral posicionado mais próximo ou ao elemento raiz (se nenhum ancestral estiver posicionado).
-                            Remove do fluxo normal: O elemento é removido do fluxo normal do documento, o que significa que outros elementos agem como se o elemento não estivesse presente. */
-    color: var(--text-base-light);
+    color: #fff;
     font-size: 24px;
     font-weight: 700;
 }
@@ -264,10 +251,10 @@
 }
 
 .grid-container {
-    grid-gap: var(--grid-gap);
+    grid-gap: 24px;
     display: grid;
-    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
-    min-width: var(--min-container-width);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-width: 767px;
 }
 
 .artist-card {
@@ -331,3 +318,35 @@
     font-weight: 400;
     font-size: 0.875rem;
 }
+
+.play {
+    position: relative;
+}
+
+.play .fa-play {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 20px 40px;
+}
+
+/* FIM CARD ARTISTA */
